@@ -28,9 +28,27 @@ button{
     height: 100px;
     border-radius: 50px;
     border: none;
-    background-color: hsl(43, 92%, 47%);
+    background-color: hsl(0, 0%, 30%);
     color: white;
     font-size: 2.6rem;
     font-weight: bold;
     cursor: pointer;
+}
+
+button:hover {
+    background-color:hsl(0, 0%, 35%);
+}
+
+button:active {
+    background-color:hsl(0, 0%, 45%);
+}
+
+.operation {
+    background-color: hsl(45, 94%, 50%);
+}
+.operation:hover {
+    background-color: hsl(45, 94%, 60%);
+}
+.operation:active {
+    background-color:hsl(45, 94%, 70%);
 }

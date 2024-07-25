@@ -1,34 +1,23 @@
-// console.log(`Hello`);
-// console.log(`Love pizza`);
+// LETS WRITE OUR OPERATIONS FOR CALCULATOR
 
-// window.alert(`This is an alert!`);
-// window.alert(`I like pizza!`);
+const display = document.getElementById("display");
 
-//This is a comment
+let result = 0;
 
-/*
-    This is a multiple line 
-*/
-
-const decrease = document.getElementById("decrease");
-const reset = document.getElementById("reset");
-const increase = document.getElementById("increase");
-const counter = document.getElementById("counter");
-
-let count = 0;
-
-
-increase.onclick = function() {
-    count++;
-    counter.textContent = count;
+function appendToDisplay(input) {
+    display.value += input
+    result += input;
 }
 
-decrease.onclick = function() {
-    count--;
-    counter.textContent = count;
+function calculate() {
+    try {
+        display.value = eval(display.value);
+    } catch(eroor) {
+        display.value = "Error";
+        console.log(error);
+    }
 }
 
-reset.onclick = function() {
-    count = 0;
-    counter.textContent = count;
+function clearDisplay() {
+    display.value = "";
 }
